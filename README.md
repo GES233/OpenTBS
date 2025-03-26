@@ -6,11 +6,15 @@ Fabric and scala implementation of the broken script.
 
 Due to The Broken Script's copyright, you should do some stuff when you download this repo.
 
+```powershell
+.\scripts\fetchAssets.ps1 -FilePath 'path/to/tbs.jar'
+```
+
 If migrate is done, may request the certification of wendigodrip.
 
-## From TBS
+## Inspection Result
 
-_version: 1.9.3_
+_version: 1.9_
 
 * `A.class`
   * Send `Err.<o>` message to player.

@@ -13,9 +13,9 @@ class DisappearWhenUse(settings: Item.Settings) extends Item(settings):
       TypedActionResult.pass(user.getStackInHand(hand))
     else
       // item - 1
-      val stack: ItemStack = user.getStackInHand(hand)
+      // better use var: nope
+      var stack: ItemStack = user.getStackInHand(hand)
       stack.decrement(1)
       OpenTBS.logger.info(s"after: ${stack.getCount}")
 
-      // Why????
       TypedActionResult.success(stack)
