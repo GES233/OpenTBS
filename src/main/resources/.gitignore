@@ -2,6 +2,7 @@
 
 # thebrokenscript folder
 thebrokenscript/
+assets/
 
 # Icon of OpenTBS
-!open-tbs/icon.png
+!assets/open-tbs/icon.png

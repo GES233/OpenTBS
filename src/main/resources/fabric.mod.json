@@ -3,9 +3,9 @@
 	"id": "open-tbs",
 	"version": "${version}",
 	"name": "Open TBS",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Here I am.",
 	"authors": [
-		"Me!"
+		"Void"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
