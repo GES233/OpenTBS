@@ -8,7 +8,6 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 object Items:
   def initialize(): Unit = { }
 
-  // TODO: register
   private def register(path: String, item: Item): Item =
     val itemKey: RegistryKey[Item] = RegistryKey.of(RegistryKeys.ITEM, Identifier.of("opentbs", path))
 
@@ -31,21 +30,24 @@ object Items:
     DisappearWhenUse(FabricItemSettings().maxCount(64).rarity(Rarity.COMMON))
   )
 
-  // TODO: record_14(disc14new.ogg)
+  // TODO
+  // opentbs:record_14(disc14new.ogg)
   // net.mcreator.interpritation.item.Record14Item
   val RECORD14: Item = register(
     "record_14",
     Item(FabricItemSettings().maxCount(1).rarity(Rarity.COMMON))
   )
 
-  // TODO: record_15(disc15.betray.ogg)
+  // TODO
+  // opentbs:record_15(disc15.betray.ogg)
   // net.mcreator.interpritation.item.Record15Item
   val RECORD15: Item = register(
     "record_15",
     Item(FabricItemSettings().maxCount(1).rarity(Rarity.COMMON))
   )
 
-  // TODO: record_16(disc16.youcant.ogg)
+  // TODO
+  // opentbs:record_16(disc16.youcant.ogg)
   // net.mcreator.interpritation.item.Record16Item
   val RECORD16: Item = register(
     "record_16",
