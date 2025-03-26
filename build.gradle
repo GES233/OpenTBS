@@ -18,7 +18,7 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 	maven {
-		name = "Main"
+		name = "Scala4Fabric"
 		url = uri("https://maven.kotori316.com")
 		content {
 			includeVersion("com.kotori316", "scalable-cats-force-fabric", project.slp_version)
@@ -26,6 +26,14 @@ repositories {
 			includeVersion("org.typelevel", "cats-kernel_3", project.cats_version)
 			includeVersion("org.typelevel", "cats-free_3", project.cats_version)
 		}
+	}
+	maven {
+        name = 'GeckoLib'
+        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        content {
+                includeGroupByRegex("software\\.bernie.*")
+                includeGroup("com.eliotlash.mclib")
+        }
 	}
 }
 
@@ -64,6 +72,10 @@ dependencies {
 	implementation "org.typelevel:cats-kernel_3:${project.cats_version}"
 	// Test
 	testImplementation "org.scala-lang:scala3-library_3:${project.scala_version}"
+
+	// GeckoLib
+	modImplementation("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
+    implementation("com.eliotlash.mclib:mclib:20")
 }
 
 processResources {

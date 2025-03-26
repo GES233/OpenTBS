@@ -1,0 +1,7 @@
+## To ignore TBS's assets.
+
+# thebrokenscript folder
+thebrokenscript/
+
+# Icon of OpenTBS
+!open-tbs/icon.png
