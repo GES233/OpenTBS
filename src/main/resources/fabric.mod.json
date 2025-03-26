@@ -18,19 +18,19 @@
 		"main": [
 			{
 				"value": "moe.chestnut.awa.opentbs.OpenTBS",
-				"adapter": "kotlin"
+				"adapter": "kotori_scala"
 			}
 		],
 		"client": [
 			{
 				"value": "moe.chestnut.awa.opentbs.OpenTBSClient",
-				"adapter": "kotlin"
+				"adapter": "kotori_scala"
 			}
 		],
 		"fabric-datagen": [
 			{
 				"value": "moe.chestnut.awa.opentbs.OpenTBSDataGenerator",
-				"adapter": "kotlin"
+				"adapter": "kotori_scala"
 			}
 		]
 	},
@@ -46,7 +46,10 @@
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*",
-		"fabric-language-kotlin": "*"
+		"kotori_scala": ">=3.0.0"
+	},
+	"requires": {
+		"kotori_scala": ">=3.0.0"
 	},
 	"suggests": {
 		"another-mod": "*"
