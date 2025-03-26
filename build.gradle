@@ -18,8 +18,8 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 	maven {
-		name = "Scala4Fabric"
-		url = uri("https://maven.kotori316.com")
+		name = 'Scala4Fabric'
+		url = 'https://maven.kotori316.com'
 		content {
 			includeVersion("com.kotori316", "scalable-cats-force-fabric", project.slp_version)
 			includeVersion("org.typelevel", "cats-core_3", project.cats_version)

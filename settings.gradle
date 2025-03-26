@@ -5,8 +5,8 @@ pluginManagement {
 			url = 'https://maven.fabricmc.net/'
 		}
 		maven {
-			name = "Kotori316"
-			url = uri("https://maven.kotori316.com/")
+			name = 'Kotori316'
+			url = 'https://maven.kotori316.com/'
 		}
 		mavenCentral()
 		gradlePluginPortal()
