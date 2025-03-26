@@ -20,9 +20,7 @@ object Items:
   // net.mcreator.interpritation.item.NItem
   val NULL: Item = register(
     "null",
-    Item(FabricItemSettings().maxCount(64).rarity(Rarity.COMMON))
-    // TODO: it will disappear when use it.
-    // net.mcreator.interpritation.procedures.NRightclickedProcedure
+    DisappearWhenUse(FabricItemSettings().maxCount(64).rarity(Rarity.COMMON))
   )
 
   // opentbs:gore
@@ -30,9 +28,7 @@ object Items:
   // same as null
   val GORE: Item = register(
     "gore",
-    Item(FabricItemSettings().maxCount(64).rarity(Rarity.COMMON))
-    // TODO: it will disappear when use it.
-    // net.mcreator.interpritation.procedures.NRightclickedProcedure
+    DisappearWhenUse(FabricItemSettings().maxCount(64).rarity(Rarity.COMMON))
   )
 
   // TODO: record_14(disc14new.ogg)
