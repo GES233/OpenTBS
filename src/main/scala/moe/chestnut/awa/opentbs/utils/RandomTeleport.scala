@@ -20,10 +20,10 @@ class RandomTeleport:
       .filter(
         _ match
           case (true, _) => true
-          case _ => false
+          case _         => false
       )
-      .map {
-        case (_, safePos) => safePos
+      .map { case (_, safePos) =>
+        safePos
       }
 
     // teleport entity
@@ -41,9 +41,11 @@ class RandomTeleport:
       world.getBlockState(pos).isAir && world.getBlockState(pos.up()).isAir
 
     val noFluidInSpace =
-      world.getBlockState(pos.down()).getBlock != Blocks.LAVA && world
-        .getBlockState(pos.down())
-        .getBlock != Blocks.SOUL_SAND
+      (
+        world.getBlockState(pos.down()).getBlock != Blocks.LAVA
+        && world.getBlockState(pos.down()).getBlock != Blocks.SOUL_SAND
+        && world.getBlockState(pos.down()).getBlock != Blocks.WATER
+      )
 
     Tuple2(
       blockCanHoldEntity && enoughSpaceToContainerEntity && noFluidInSpace,
