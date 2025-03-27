@@ -10,4 +10,10 @@ object OpenTBS extends ModInitializer:
   Items.initialize()
 
   override def onInitialize(): Unit =
+    logger.warn(
+      "This script required extracts assets from the broken script v1.9.3 for 1.20.1 forge. " +
+      "Ensure you have legally obtained the JAR file. " +
+      "The author of this project is not responsible for misuse."
+    )
+
     logger.info("Hello Fabric world!")
