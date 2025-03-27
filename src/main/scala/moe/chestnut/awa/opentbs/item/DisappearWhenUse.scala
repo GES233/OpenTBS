@@ -1,6 +1,5 @@
 package moe.chestnut.awa.opentbs.item
 
-import moe.chestnut.awa.opentbs.OpenTBS
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.item.{Item, ItemStack}
 import net.minecraft.util.{Hand, TypedActionResult}
