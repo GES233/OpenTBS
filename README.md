@@ -10,7 +10,12 @@ Due to The Broken Script's copyright, you should do some stuff when you download
 .\scripts\fetchAssets.ps1 -FilePath 'path/to/tbs.jar'
 ```
 
-If migrate is done, may request the certification of wendigodrip.
+If migrate is done, I may request the certification from wendigodrip.
+
+## License
+
+- OpenTBS's source code and migrate script: CC0
+- assets from thebrokenscript: belongs to wendigodrip
 
 ## Inspection Result
 
