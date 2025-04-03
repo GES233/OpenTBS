@@ -28,12 +28,12 @@ repositories {
 		}
 	}
 	maven {
-        name = 'GeckoLib'
-        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
-        content {
-                includeGroupByRegex("software\\.bernie.*")
-                includeGroup("com.eliotlash.mclib")
-        }
+                name = 'GeckoLib'
+                url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+                content {
+                        includeGroupByRegex("software\\.bernie.*")
+                        includeGroup("com.eliotlash.mclib")
+                }
 	}
 }
 
@@ -75,7 +75,7 @@ dependencies {
 
 	// GeckoLib
 	modImplementation("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
-    implementation("com.eliotlash.mclib:mclib:20")
+        implementation("com.eliotlash.mclib:mclib:20")
 }
 
 processResources {
