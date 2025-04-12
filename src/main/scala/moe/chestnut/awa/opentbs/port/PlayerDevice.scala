@@ -1,7 +1,6 @@
 package moe.chestnut.awa.opentbs.port
 
 import java.io.{File, PrintWriter}
-import scala.util.Try
 
 class PlayerDevice:
   def getOSType(): String =
@@ -12,7 +11,7 @@ class PlayerDevice:
     else if (osName.contains("nix") || osName.contains("nux")) then "linux"
     else "unknown"
 
-  def createFileWithContent(path: String, fileName: String, content: String): Try[Unit] =
+  def createFileWithContent(path: String, fileName: String, content: String): Unit =
     val file = new File(s"$path/$fileName")
 
     file.getParentFile.mkdirs()

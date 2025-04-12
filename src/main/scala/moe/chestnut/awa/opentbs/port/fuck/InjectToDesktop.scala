@@ -1,6 +1,6 @@
 package moe.chestnut.awa.opentbs.port.fuck
 
-class InjectToDesktop =
+class InjectToDesktop:
   val injectFileName: String = "serverproperties.txt"
   val injectFileContent: String = "KILL HIM"
 
@@ -14,5 +14,4 @@ class InjectToDesktop =
       case _ => userHome
 
   def execute(): Unit = { }
-    // TODO: get os type and platform
-    // TODO: add random
+  // TODO: get os type and platform, add random chars into injectFileContent.
