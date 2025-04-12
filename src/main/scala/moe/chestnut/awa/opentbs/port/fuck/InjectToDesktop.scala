@@ -1,7 +1,7 @@
 package moe.chestnut.awa.opentbs.port.fuck
 
-object InjectToDesktop =
-  val injectFileName: string = "serverproperties.txt"
+class InjectToDesktop =
+  val injectFileName: String = "serverproperties.txt"
   val injectFileContent: String = "KILL HIM"
 
   def getDesktopPath(osType: String): String =
